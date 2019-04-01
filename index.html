@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random number generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    
+</head>
+<body onload="init()">
+     <div id="container">
+          <div class="panel">
+            <h2>Zamislio sam neki broj izmedju 1-100</h2>
+            <h3>Pogodi koji je to broj u pitanju</h3><hr>
+            <p>Izaberite tezinu igre: </p>
+            <button id="dugmeLako" class="">Laka igra : Imate 10 pokusaja (inicijalno)</button>
+            <button id="dugmeTesko" class="">Teska igra : Imate 5 pokusaja</button>
+            <button id="novaIgra">Nova igra</button>
+          </div>
+
+          <div class="panel">
+              <h3 id="textOutput" >Upisite broj koji zelite i pritisnite enter </h3>
+              <input type="number" id="inputBox" autocomplete="off">
+              <p>Pokusali ste <span id="pokusaji"></span> puta</p>
+          </div>
+
+          <div class="panel">
+              <p>Tvoji prethodni pokusaji: </p>
+              <p id="prethodniPokusaji"></p>
+          </div>
+     </div>
+
+
+
+
+
+
+
+
+    <script src="bootstrap/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
