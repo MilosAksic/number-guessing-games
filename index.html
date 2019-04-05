@@ -7,10 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/meni.css" />
     
 </head>
 <body onload="init()">
+        <header>
+            <div class="containernovo">
+                <h1 class="logo">Izaberite verziju :</h1>
+        
+                <nav>
+                    <ul>
+                        <li><a href="#" class="aktivna" >Verzija 1</a></li>
+                        <li><a href="Verzija2.html">Verzija 2</a></li>
+                        <li><a href="#">Verzija 3</a></li>
+        
+                    </ul>
+                </nav>
+            </div>
+        </header>
      <div id="container">
+
           <div class="panel">
             <h2>Zamislio sam neki broj izmedju 1-100</h2>
             <h3>Pogodi koji je to broj u pitanju</h3><hr>
@@ -20,7 +36,7 @@
             <button id="novaIgra">Nova igra</button>
           </div>
 
-          <div class="panel">
+         <div class="panel">
               <h3 id="textOutput" >Upisite broj koji zelite i pritisnite enter </h3>
               <input type="number" id="inputBox" autocomplete="off">
               <p>Pokusali ste <span id="pokusaji"></span> puta</p>
@@ -43,5 +59,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="Js/main.js"></script>
+   
 </body>
 </html>

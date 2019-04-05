@@ -1,0 +1,42 @@
+.broj {
+    font-size: 30px;
+    margin: 20px;
+    border: 2px solid gray;
+}
+
+input {
+    width: 70px;
+}
+
+.mesto {
+    color: red;
+    font: 20px sans-serif;
+    line-height: 90px;
+}
+
+#ulog {
+    width: 200px;
+}
+
+.zeleno {
+    background: green
+}
+
+.red {
+    background: red;
+}
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+button {
+    max-width: 15%;
+}
+
+span {
+  
+
+ 
+}

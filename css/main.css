@@ -1,15 +1,16 @@
 body {
     font-size: 1.2em;
     background: url('../images/Pozadina.jpg') no-repeat center center fixed;
-    background-size: cover; 
+    background-size: cover;
 }
+
 #container {
     max-width: 70%;
     margin: 0 auto;
     text-align: center;
     border-radius: 15px;
     padding: 15px;
-    background: #7a6806;
+    background: #03487c;
     opacity: 0.95;
 }
 
@@ -19,20 +20,19 @@ body {
     border-radius: 15px;
     padding: 15px;
     background: #eee;
-
 }
 
 button {
     background: #862d59;
-    height : 3em;
+    height: 3em;
     width: 70%;
     margin-bottom: 1.5em;
     border-radius: 15px;
-    color : white;
+    color: white;
     font-size: 20px;
-
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
 }
 
@@ -40,12 +40,15 @@ input {
     border-radius: 15px;
     width: 60%;
     text-align: center;
-    height : 3.7em;
+    height: 3.7em;
     margin-top: 8px;
     margin-bottom: 10px;
-
+    outline: none;
 }
 
 .activeButton {
     background-color: green;
 }
+
+
+/* verzija 2 */

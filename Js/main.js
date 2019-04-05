@@ -57,6 +57,7 @@ function poredjenje (){
     d('prethodniPokusaji').innerHTML = prethodniPokusaji;
     pokusaji ++; 
     pokusajiPolje.innerHTML = pokusaji;
+
 if (prethodniPokusaji.length < maxPokusaja) {
     if (korisnikovBroj > kompjuterovBroj ) {
         textPolje.innerHTML = "Tvoj broj je preveliki!";
@@ -83,8 +84,7 @@ if (prethodniPokusaji.length < maxPokusaja) {
         textPolje.innerHTML = "Zao mi je, izgubili ste!<br> Broj je bio " +
         kompjuterovBroj;
         d('container').style.backgroundColor = 'red';
-        krajIgre(); 
-       
+        krajIgre();      
     }else {
         textPolje.innerHTML = "Pogodili ste broj!" + "<br>Trebalo vam je "  +
         pokusaji +" pokusaja";
