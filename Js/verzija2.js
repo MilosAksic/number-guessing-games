@@ -1,6 +1,5 @@
 let niz = [];
-let balance = document.getElementById('balance').innerHTML;
-
+// let balance = document.getElementById('balance').innerHTML;
 // pravi niz
 
 for (let i = 0; i < 35; i++) {
@@ -33,10 +32,7 @@ function ispisiBrojeve() {
 }
 
 function provera() {
-    var ulog = document.getElementById('ulog').value;
-    var dobitak = 0;
-    let balance1 = parseInt(balance);
-    console.log(balance1);
+   
     let brojac = 0;
     let x = 1;
     let y = 0;
@@ -51,7 +47,6 @@ function provera() {
                 i = 0;
             }
         }
-
 
         if (x <= 6) {
             if (document.getElementById(`mojbroj${x}`).value == niz[i]) {
@@ -80,111 +75,13 @@ function provera() {
             }
         }
         max++;
-
-        switch (max) {
-            case 6:
-                dobitak = ulog * 25000;
-                break;
-            case 7:
-                dobitak = ulog * 15000;
-                break;
-            case 8:
-                dobitak = ulog * 7500;
-                break;
-            case 9:
-                dobitak = ulog * 3000;
-                break;
-            case 10:
-                dobitak = ulog * 1250;
-                break;
-            case 11:
-                dobitak = ulog * 700;
-                break;
-            case 12:
-                dobitak = ulog * 350;
-                break;
-            case 13:
-                dobitak = ulog * 250;
-                break;
-            case 14:
-                dobitak = ulog * 175;
-                break;
-            case 15:
-                dobitak = ulog * 125;
-                break;
-            case 16:
-                dobitak = ulog * 100;
-                break;
-            case 17:
-                dobitak = ulog * 90;
-                break;
-            case 18:
-                dobitak = ulog * 80;
-                break;
-            case 19:
-                dobitak = ulog * 70;
-                break;
-            case 20:
-                dobitak = ulog * 60;
-                break;
-            case 21:
-                dobitak = ulog * 50;
-                break;
-            case 22:
-                dobitak = ulog * 35;
-                break;
-            case 23:
-                dobitak = ulog * 25;
-                break;
-            case 24:
-                dobitak = ulog * 20;
-                break;
-            case 25:
-                dobitak = ulog * 15;
-                break;
-            case 26:
-                dobitak = ulog * 12;
-                break;
-            case 27:
-                dobitak = ulog * 10;
-                break;
-            case 28:
-                dobitak = ulog * 8;
-                break;
-            case 29:
-                dobitak = ulog * 7;
-                break;
-            case 30:
-                dobitak = ulog * 6;
-                break;
-            case 31:
-                dobitak = ulog * 5;
-                break;
-            case 32:
-                dobitak = ulog * 4;
-                break;
-            case 33:
-                dobitak = ulog * 3;
-                break;
-            case 34:
-                dobitak = ulog * 2;
-                break;
-            case 35:
-                dobitak = ulog * 1;
-                break;
-            default:
-                dobitak = 0;
-
-
-        }
-        balance1 = balance1 + dobitak;
-    } else {
-        balance1 = balance1 - ulog;
-    }
+      
+        
+    } 
 
 
     console.log(brojac);
-    return [brojac, max, dobitak, balance1];
+    return [brojac, max];
 
 }
 
@@ -196,8 +93,7 @@ dugme.addEventListener('click', function () {
     var mesto = provera();
     ispisiBrojeve();
     document.getElementById('pogodka').innerHTML = mesto[0];
-    document.getElementById('dobitak').innerHTML = mesto[2];
-    document.getElementById('balance').innerHTML = mesto[3];
+
     if (mesto[0] == 6) {
         document.getElementById('test').innerHTML = `pogodili ste na ${mesto[1]}. mestu`;
     }
@@ -241,8 +137,14 @@ document.getElementById('reset').addEventListener('click', function () {
         }
 
     }
-    for (let q = 0; q < 36; q++) {
-        document.getElementById(`broj${q}`).innerHTML = ' '
+    for (let q = 0; q < 35; q++) {
+        document.getElementById(`broj${q}`).innerHTML = ''
 
     }
+    for (let c = 1; c < 7; c++) {
+        document.getElementById(`mojbroj${c}`).value = ''
+        document.getElementById(`mojbroj${c}`).className ='';
+    }
+
+
 })

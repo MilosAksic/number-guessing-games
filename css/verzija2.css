@@ -28,15 +28,19 @@ input {
 #container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-    background-color: white;
+    background-color: #d1e0e0;
     padding: 10px;
 }
 button {
     max-width: 15%;
 }
 
-span {
-  
-
- 
+#container2 {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #d1e0e0;
+    padding: 10px;
 }
