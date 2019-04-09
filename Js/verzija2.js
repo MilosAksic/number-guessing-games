@@ -1,5 +1,8 @@
+let d = id => document.getElementById(id);
+
 let niz = [];
-// let balance = document.getElementById('balance').innerHTML;
+let testNiz = [];
+
 // pravi niz
 
 for (let i = 0; i < 35; i++) {
@@ -25,20 +28,18 @@ for (let i = 0; i < 35; i++) {
 function ispisiBrojeve() {
 
     for (let i = 0; i < niz.length; i++) {
-
-        document.getElementById(`broj${i}`).innerHTML = `${niz[i]}      `
+        d(`broj${i}`).innerHTML = `${niz[i]}      `
     }
 
 }
 
 function provera() {
-   
     let brojac = 0;
     let x = 1;
     let y = 0;
     for (let i = 0; i < niz.length; i++) {
-        if (i == niz.length - 1 && x <= 6) {
-            if (document.getElementById(`mojbroj${x}`).value == niz[i]) {
+        if (i == niz.length -1  && x <= 6) {
+            if (d(`mojbroj${x}`).value == niz[i]) {
                 x++;
                 brojac++
                 i = 0;
@@ -49,7 +50,7 @@ function provera() {
         }
 
         if (x <= 6) {
-            if (document.getElementById(`mojbroj${x}`).value == niz[i]) {
+            if (d(`mojbroj${x}`).value == niz[i]) {
                 x++;
                 brojac++;
                 i = 0;
@@ -67,7 +68,7 @@ function provera() {
         console.log('radi');
 
         for (let i = 0; i < niz.length; i++) {
-            if (document.getElementById(`mojbroj${z}`).value == niz[i]) {
+            if (d(`mojbroj${z}`).value == niz[i]) {
                 if (i > max) {
                     max = i;
                     z++;
@@ -75,9 +76,7 @@ function provera() {
             }
         }
         max++;
-      
-        
-    } 
+    }
 
 
     console.log(brojac);
@@ -86,39 +85,47 @@ function provera() {
 }
 
 
-var dugme = document.getElementById('Submit');
+var dugme = d('Submit');
 
 dugme.addEventListener('click', function () {
-
+    
+    for (let i =1 ; i<7 ; i++){
+        testNiz.push(d(`mojbroj${i}`).value);
+    }
+    console.log(testNiz);
+    
     var mesto = provera();
     ispisiBrojeve();
-    document.getElementById('pogodka').innerHTML = mesto[0];
+    d('container').style.display="grid";
+    d('pogodci').style.display = "inline";
+    d('pogodka').innerHTML = mesto[0];
 
     if (mesto[0] == 6) {
-        document.getElementById('test').innerHTML = `pogodili ste na ${mesto[1]}. mestu`;
+        d('test').innerHTML = `pogodili ste na ${mesto[1]}. mestu`;
     }
     provera1()
+    
 
 });
 function provera1() {
 
     for (let i = 1; i < 7; i++) {
         for (let q = 0; q < niz.length + 1; q++) {
-            if (document.getElementById(`mojbroj${i}`).value
+            if (d(`mojbroj${i}`).value
                 == niz[q]) {
                 q = 0;
-                document.getElementById(`mojbroj${i}`).classList.toggle("zeleno")
+                d(`mojbroj${i}`).classList.toggle("zeleno")
                 break
             }
             if (q == niz.length) {
-                document.getElementById(`mojbroj${i}`).classList.toggle("red")
+                d(`mojbroj${i}`).classList.toggle("red")
             }
         }
 
     }
 }
 
-document.getElementById('reset').addEventListener('click', function () {
+d('reset').addEventListener('click', function () {
     niz = [];
     for (let i = 0; i < 35; i++) {
         var add = true;
@@ -138,13 +145,36 @@ document.getElementById('reset').addEventListener('click', function () {
 
     }
     for (let q = 0; q < 35; q++) {
-        document.getElementById(`broj${q}`).innerHTML = ''
+        d(`broj${q}`).innerHTML = ''
 
     }
     for (let c = 1; c < 7; c++) {
-        document.getElementById(`mojbroj${c}`).value = ''
-        document.getElementById(`mojbroj${c}`).className ='';
+        d(`mojbroj${c}`).value = ''
+        d(`mojbroj${c}`).className ='';
     }
 
 
 })
+
+
+let nekiNiz = [3,4,5,6,9]
+
+function proveraNiza(a) {
+    var counts = [];
+    for (var i = 0; i <= a.length; i++) {
+        if (counts[a[i]] === undefined) {
+            counts[a[i]] = 1;
+        } else {
+            return true;
+        }
+    }
+    return false;
+}
+
+let Provera = proveraNiza(nekiNiz)
+if (Provera) {
+    console.log("Ima jednako");
+
+} else {
+    console.log("Nema jednakih");
+}

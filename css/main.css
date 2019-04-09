@@ -6,7 +6,7 @@ body {
 
 #container {
     max-width: 70%;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     border-radius: 15px;
     padding: 15px;
@@ -15,7 +15,7 @@ body {
 }
 
 .panel {
-    max-width: 70%;
+    max-width: 75%;
     margin: 20px auto;
     border-radius: 15px;
     padding: 15px;
@@ -47,8 +47,65 @@ input {
 }
 
 .activeButton {
-    background-color: green;
+    background-color: #47d147;
 }
 
+@media only screen and (max-width: 800px) {
+    #container {
+        max-width: 99%;
+    }
+    .panel {
+        max-width: 97%;
+    }
+    header {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#errorMsg {
+    color: red;
+}
 
 /* verzija 2 */
+
+@media only screen and (min-width: 801px) and (max-width: 1120px) {
+    #container {
+        max-width: 89%;
+    }
+    .panel {
+        max-width: 87%;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}

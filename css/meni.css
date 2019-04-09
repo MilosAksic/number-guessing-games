@@ -11,7 +11,7 @@
  }
 
  header {
-     background: #55d6aa;
+     background: #457ABB;
  }
 
  header::after {
@@ -71,3 +71,43 @@
  nav a:hover::before {
      width: 100%;
  }
+
+ @media only screen and (max-width: 1120px) {
+    
+      
+    
+    header {
+        text-align: center;
+        margin: 0;
+            padding: 0;
+
+    }
+        h1 {
+            margin: 0 auto;
+        }
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+             float: initial; 
+        }
+
+        nav li {
+            
+            margin-left: 20px;
+            padding-top: 3px;
+           margin-bottom: 15px;
+        }
+        .logo {
+            float: initial;
+        }
+       
+    }
