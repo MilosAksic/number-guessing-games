@@ -23,6 +23,17 @@ for (let i = 0; i < 35; i++) {
 
 }
 
+function proveraNiza(a) {
+    var counts = [];
+    for (var i = 0; i <= a.length; i++) {
+        if (counts[a[i]] === undefined) {
+            counts[a[i]] = 1;
+        } else {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 function ispisiBrojeve() {
@@ -88,12 +99,17 @@ function provera() {
 var dugme = d('Submit');
 
 dugme.addEventListener('click', function () {
-    
+    testNiz = [];
     for (let i =1 ; i<7 ; i++){
-        testNiz.push(d(`mojbroj${i}`).value);
+        testNiz.push( parseInt (d(`mojbroj${i}`).value));
+    }
+
+    if (proveraNiza(testNiz)) {
+        d('errorText').innerHTML = "Upisite sve razlicite brojeve";
+        return
     }
     console.log(testNiz);
-    
+    d('errorText').innerHTML= "" 
     var mesto = provera();
     ispisiBrojeve();
     d('container').style.display="grid";
@@ -157,24 +173,6 @@ d('reset').addEventListener('click', function () {
 })
 
 
-let nekiNiz = [3,4,5,6,9]
 
-function proveraNiza(a) {
-    var counts = [];
-    for (var i = 0; i <= a.length; i++) {
-        if (counts[a[i]] === undefined) {
-            counts[a[i]] = 1;
-        } else {
-            return true;
-        }
-    }
-    return false;
-}
 
-let Provera = proveraNiza(nekiNiz)
-if (Provera) {
-    console.log("Ima jednako");
 
-} else {
-    console.log("Nema jednakih");
-}

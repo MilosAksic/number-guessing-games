@@ -50,6 +50,12 @@ button {
     padding: 15px;
     background-color: #d1e0e0;
     padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#errorText {
+    color: red;
 }
 
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
