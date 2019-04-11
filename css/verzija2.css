@@ -78,7 +78,7 @@ input[type="number"] {
 @media only screen and (max-width: 640px) {
     #container {
         max-width: 100%;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto;
     }
     #container2 {
         max-width: 100%;
