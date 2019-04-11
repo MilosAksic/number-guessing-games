@@ -2,6 +2,8 @@ let d = id => document.getElementById(id);
 
 let niz = [];
 let testNiz = [];
+const dugme = d('Submit');
+const reset = d('reset');
 
 // pravi niz
 
@@ -100,8 +102,6 @@ function provera() {
 }
 
 
-var dugme = d('Submit');
-
 dugme.addEventListener('click', function () {
     testNiz = [];
     for (let i =1 ; i<7 ; i++){
@@ -110,6 +110,13 @@ dugme.addEventListener('click', function () {
     for (let i = 0; i < 6; i++) {
         if (testNiz[i] < 1 || testNiz[i] > 48) {
             d('errorText').innerHTML = "Dozvoljeni su brojevi od 1 do 48";
+            return
+        }
+    }
+
+    for (let i = 1; i < 7; i++) {
+        if (d(`mojbroj${i}`).value == "") {
+            d('errorText').innerHTML = "Popunite sva polja";
             return
         }
     }
@@ -156,7 +163,7 @@ function provera1() {
     }
 }
 
-d('reset').addEventListener('click', function () {
+reset.addEventListener('click', function () {
     d('container').style.display='none';
     d('pogodci').style.display = 'none';
     d('test').style.display = 'none';
