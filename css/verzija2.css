@@ -1,18 +1,26 @@
 .broj {
-    font-size: 30px;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
     margin: 20px;
-    border: 2px solid gray;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#izvuceni {
+    font-size: 50px;
+    display: none;
+    background-color: #d1e0e0;
 }
 
 input {
     width: 70px;
 }
 
-.mesto {
-    color: blue;
-    font: 20px sans-serif;
-    line-height: 90px;
-}
 
 #ulog {
     width: 200px;
@@ -32,7 +40,7 @@ input {
 
 #container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     background-color: #d1e0e0;
     padding: 10px;
     display: none;

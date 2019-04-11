@@ -7,9 +7,9 @@ let testNiz = [];
 
 for (let i = 0; i < 35; i++) {
     var add = true;
-    var randomNumber = Math.floor(Math.random() * 45) + 1;
+    var randomNumber = Math.floor(Math.random() * 48) + 1;
 
-    for (var y = 0; y < 45; y++) {
+    for (let y = 0; y < 35; y++) {
         if (niz[y] == randomNumber) {
             add = false;
 
@@ -22,6 +22,9 @@ for (let i = 0; i < 35; i++) {
     }
 
 }
+
+console.log(niz);
+
 
 function proveraNiza(a) {
     var counts = [];
@@ -39,17 +42,18 @@ function proveraNiza(a) {
 function ispisiBrojeve() {
 
     for (let i = 0; i < niz.length; i++) {
-        d(`broj${i}`).innerHTML = `${niz[i]}      `
+        d(`broj${i}`).innerHTML = `${niz[i]}`
     }
 
 }
 
 function provera() {
     let brojac = 0;
-    let x = 1;
+    let x = 1; // id moj broj
     let y = 0;
     for (let i = 0; i < niz.length; i++) {
-        if (i == niz.length -1  && x <= 6) {
+        //refaktorisanje varijable
+        if (i == niz.length - 1 && x <= 6) {
             if (d(`mojbroj${x}`).value == niz[i]) {
                 x++;
                 brojac++
@@ -103,13 +107,25 @@ dugme.addEventListener('click', function () {
     for (let i =1 ; i<7 ; i++){
         testNiz.push( parseInt (d(`mojbroj${i}`).value));
     }
+    for (let i = 0; i < 6; i++) {
+        if (testNiz[i] < 1 || testNiz[i] > 48) {
+            d('errorText').innerHTML = "Dozvoljeni su brojevi od 1 do 48";
+            return
+        }
+    }
 
     if (proveraNiza(testNiz)) {
         d('errorText').innerHTML = "Upisite sve razlicite brojeve";
         return
     }
+
+    d('container').style.display = 'grid';
+    d('pogodci').style.display = 'block';
+    d('test').style.display = 'block';
+    d('izvuceni').style.display = 'inline';
+
     console.log(testNiz);
-    d('errorText').innerHTML= "" 
+    d('errorText').innerHTML= ""
     var mesto = provera();
     ispisiBrojeve();
     d('container').style.display="grid";
@@ -120,8 +136,6 @@ dugme.addEventListener('click', function () {
         d('test').innerHTML = `pogodili ste na ${mesto[1]}. mestu`;
     }
     provera1()
-    
-
 });
 function provera1() {
 
@@ -129,6 +143,7 @@ function provera1() {
         for (let q = 0; q < niz.length + 1; q++) {
             if (d(`mojbroj${i}`).value
                 == niz[q]) {
+                d(`broj${q}`).style.background = "green"
                 q = 0;
                 d(`mojbroj${i}`).classList.toggle("zeleno")
                 break
@@ -142,6 +157,11 @@ function provera1() {
 }
 
 d('reset').addEventListener('click', function () {
+    d('container').style.display='none';
+    d('pogodci').style.display = 'none';
+    d('test').style.display = 'none';
+    d('izvuceni').style.display = 'none';
+
     niz = [];
     for (let i = 0; i < 35; i++) {
         var add = true;
@@ -150,7 +170,6 @@ d('reset').addEventListener('click', function () {
         for (var y = 0; y < 45; y++) {
             if (niz[y] == randomNumber) {
                 add = false;
-
             }
         }
         if (add) {

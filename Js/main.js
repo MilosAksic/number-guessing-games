@@ -34,12 +34,14 @@ function lakaIgra (){
     maxPokusaja = 10;
     dugmeLako.className = 'activeButton';
     dugmeTesko.className ='';
+    dugmeTesko.style.display = 'none';
 }
 
 function teskaIgra (){
     maxPokusaja = 5;
     dugmeLako.className = '';
     dugmeTesko.className ='activeButton';
+    dugmeLako.style.display = 'none';
 }
 
 function krajIgre (){
@@ -101,8 +103,6 @@ if (prethodniPokusaji.length < maxPokusaja) {
     }
 }
 }
-
-
 
 // event listeners
 novaIgraDugme.addEventListener ('click', novaIgra)
