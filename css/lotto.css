@@ -1,0 +1,89 @@
+.broj {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#izvuceni {
+    font-size: 50px;
+    display: none;
+    background-color: #d1e0e0;
+}
+
+input {
+    width: 70px;
+}
+
+
+#ulog {
+    width: 200px;
+}
+
+#pogodci {
+    display: none;
+}
+
+.zeleno {
+    background: green
+}
+
+.red {
+    background: red;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #d1e0e0;
+    padding: 10px;
+    display: none;
+}
+
+button {
+    max-width: 15%;
+}
+
+#container2 {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #d1e0e0;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#errorText {
+    color: red;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 640px) {
+    #container {
+        max-width: 100%;
+        grid-template-columns: auto auto auto ;
+    }
+    #container2 {
+        max-width: 100%;
+    }
+    .panel {
+        max-width: 95%;
+    }
+}

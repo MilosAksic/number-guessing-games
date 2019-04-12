@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en  ">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random number generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/meni.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/lotto.css" />
+
+</head>
+
+<body>
+<header>
+    <div class="containernovo">
+        <h1 class="logo">Izaberite verziju:</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Pogodi broj</a></li>
+                <li><a href="#" class="aktivna">Lotto</a></li>
+                <!-- <li><a href="#">Verzija 3</a></li> -->
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="container2">
+    <h2>Izvlaci se 35 od 48 brojeva,<br> vas cilj je da pogodite  6 broja od 35 izvucenih</h2>
+    <h2>Upisite vase brojeve: </h2>
+    <h3 id="errorText"></h3>
+    <input type="number" id="mojbroj1">
+    <input type="number" id="mojbroj2">
+    <input type="number" id="mojbroj3">
+    <input type="number" id="mojbroj4">
+    <input type="number" id="mojbroj5">
+    <input type="number" id="mojbroj6">
+    <br>
+    <button id="Submit">OK</button>
+
+    <button id="reset">
+        RESET
+    </button>
+    <br>
+    <h2 id="pogodci">Pogodili ste <span id="pogodka"></span> broja </span> </h2>
+    <div id="test"></div>
+</div>
+
+<h2> <span id="izvuceni">Izvuceni brojevi: <span></h2>
+
+
+<div id="container">
+    <span id="broj0" class="broj"></span>
+    <span id="broj1" class="broj"></span>
+    <span id="broj2" class="broj"></span>
+    <span id="broj3" class="broj"></span>
+    <span id="broj4" class="broj"></span>
+    <span id="broj5" class="broj"></span>
+    <span id="broj6" class="broj"></span>
+    <span id="broj7" class="broj"></span>
+    <span id="broj8" class="broj"></span>
+    <span id="broj9" class="broj"></span>
+    <span id="broj10" class="broj"></span>
+    <span id="broj11" class="broj"></span>
+    <span id="broj12" class="broj"></span>
+    <span id="broj13" class="broj"></span>
+    <span id="broj14" class="broj"></span>
+    <span id="broj15" class="broj"></span>
+    <span id="broj16" class="broj"></span>
+    <span id="broj17" class="broj"></span>
+    <span id="broj18" class="broj"></span>
+    <span id="broj19" class="broj"></span>
+    <span id="broj20" class="broj"></span>
+    <span id="broj21" class="broj"></span>
+    <span id="broj22" class="broj"></span>
+    <span id="broj23" class="broj"></span>
+    <span id="broj24" class="broj"></span>
+    <span id="broj25" class="broj"></span>
+    <span id="broj26" class="broj"></span>
+    <span id="broj27" class="broj"></span>
+    <span id="broj28" class="broj"></span>
+    <span id="broj29" class="broj"></span>
+    <span id="broj30" class="broj"></span>
+    <span id="broj31" class="broj"></span>
+    <span id="broj32" class="broj"></span>
+    <span id="broj33" class="broj"></span>
+    <span id="broj34" class="broj"></span>
+</div>
+
+    <script src="bootstrap/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="Js/lotto.js"></script>
+</body>
+
+</html>
