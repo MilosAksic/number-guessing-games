@@ -2,6 +2,7 @@ let d = id => document.getElementById(id);
 
 let niz = [];
 let testNiz = [];
+
 const dugme = d('Submit');
 const reset = d('reset');
 
@@ -101,7 +102,6 @@ function provera() {
 
 }
 
-
 dugme.addEventListener('click', function () {
     testNiz = [];
     for (let i =1 ; i<7 ; i++){
@@ -168,6 +168,12 @@ reset.addEventListener('click', function () {
     d('pogodci').style.display = 'none';
     d('test').style.display = 'none';
     d('izvuceni').style.display = 'none';
+
+    for(let i = 0 ; i<35 ; i++) {
+
+    
+    d(`broj${i}`).style.background = "#d1e0e0"
+    }
 
     niz = [];
     for (let i = 0; i < 35; i++) {

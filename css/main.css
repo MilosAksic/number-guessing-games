@@ -1,7 +1,7 @@
 *{
     -webkit-user-select: none;
      -khtml-user-select: none;
-     -moz-user-select: -moz-none;
+     -moz-user-select: -    moz-none;
      -o-user-select: none;
      user-select: none;
 }
@@ -9,6 +9,10 @@ body {
     font-size: 1.2em;
     background: url('../images/Pozadina.jpg') no-repeat center center fixed;
     background-size: cover;
+    
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 #container {
@@ -17,7 +21,8 @@ body {
     text-align: center;
     border-radius: 15px;
     padding: 15px;
-    background: #03487c;
+    background: linear-gradient(to right, #373b44, #4286f4);
+
     opacity: 0.95;
 }
 
@@ -26,7 +31,8 @@ body {
     margin: 20px auto;
     border-radius: 15px;
     padding: 15px;
-    background: #eee;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
+
 }
 
 button {
@@ -35,10 +41,12 @@ button {
     width: 70%;
     margin-bottom: 1.5em;
     border-radius: 15px;
-    color: white;
+    color: white    ;
     font-size: 20px;
 }
-
+button:focus {
+    outline: none;
+}
 button:hover {
     cursor: pointer;
 }

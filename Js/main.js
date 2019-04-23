@@ -15,8 +15,7 @@ let kompjuterovBroj;
 let prethodniPokusaji = [];
 let pokusaji = 0 ;
 let maxPokusaja = 10;
-    let preostaliPokusaji
-
+let preostaliPokusaji
 
 //funkcije
 
@@ -80,25 +79,25 @@ if (prethodniPokusaji.length < maxPokusaja) {
     }else {
         textPolje.innerHTML = "Pogodili ste broj!" + "<br>Trebalo vam je "  +
         pokusaji +" pokusaja";
-        d('container').style.backgroundColor = 'green';
+        d('container').style.background = 'linear-gradient(to right, #000000, #0f9b0f)';
         krajIgre();
     }
 } else {
     if (korisnikovBroj > kompjuterovBroj ) {
         textPolje.innerHTML = "Zao mi je, izgubili ste! + <br> Broj je bio " +
         kompjuterovBroj;
-        d('container').style.backgroundColor = 'red';
+        d('container').style.background = 'linear-gradient(to right, #000000, #0f9b0f)';
         krajIgre();
 
     } else if (korisnikovBroj < kompjuterovBroj) {
         textPolje.innerHTML = "Zao mi je, izgubili ste!<br> Broj je bio " +
         kompjuterovBroj;
-        d('container').style.backgroundColor = 'red';
+        d('container').style.background = 'linear-gradient(to right, #f85032, #e73827)';
         krajIgre();
     }else {
         textPolje.innerHTML = "Pogodili ste broj!" + "<br>Trebalo vam je "  +
         pokusaji +" pokusaja";
-        d('container').style.backgroundColor = 'green';
+        d('container').style.background = 'linear-gradient(to right, #000000, #0f9b0f)';
         krajIgre();
     }
 }

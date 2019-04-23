@@ -11,7 +11,9 @@
  }
 
  header {
-     background: #457ABB;
+    background: linear-gradient(to right, #191654, #43c6ac); 
+    color:white;
+
  }
 
  header::after {
@@ -43,7 +45,7 @@
  }
 
  nav a {
-     color: #444;
+     color: white;
      text-decoration: none;
      text-transform: uppercase;
      font-size: 20px;
@@ -54,7 +56,7 @@
  }
 
  .aktivna {
-     color: #000;
+     color: white;
  }
 
  nav a::before {
