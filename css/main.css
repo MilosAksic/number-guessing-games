@@ -4,6 +4,9 @@
      -moz-user-select: -    moz-none;
      -o-user-select: none;
      user-select: none;
+     margin: 0;
+     padding : 0;
+     box-sizing: border-box;
 }
 body {
     font-size: 1.2em;
@@ -43,8 +46,8 @@ body {
 }
 
 button {
-    background: #862d59;
-    height: 3em;
+    background: linear-gradient(to right, #f12711, #f5af19);;
+    height: 60px;
     width: 70%;
     margin-bottom: 1.5em;
     border-radius: 15px;
@@ -62,14 +65,14 @@ input {
     border-radius: 15px;
     width: 30%;
     text-align: center;
-    height: 3.7em;
+    height: 70px;
     margin-top: 8px;
     margin-bottom: 10px;
     outline: none;
 }
 
 .activeButton {
-    background-color: #47d147;
+    background: linear-gradient(to right, #56ab2f, #a8e063); 
 }
 @media only screen and (max-width: 440px) {
     #dugmeLako, #dugmeTesko {

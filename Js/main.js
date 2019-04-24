@@ -21,7 +21,6 @@ let preostaliPokusaji
 
 function init() {
     kompjuterovBroj = Math.floor (Math.random() *100 + 1);
-    console.log(kompjuterovBroj);
     novaIgraDugme.style.display = 'none';
 }
 
@@ -34,6 +33,8 @@ function lakaIgra (){
     dugmeLako.className = 'activeButton';
     dugmeTesko.className ='';
     dugmeTesko.style.display = 'none';
+    tezina.style.display = 'none';
+
 }
 
 function teskaIgra (){
@@ -41,6 +42,8 @@ function teskaIgra (){
     dugmeLako.className = '';
     dugmeTesko.className ='activeButton';
     dugmeLako.style.display = 'none';
+    tezina.style.display = 'none';
+
 }
 
 function krajIgre (){
@@ -54,14 +57,12 @@ function krajIgre (){
 
 function poredjenje (){
     var korisnikovBroj = " "+ d('inputBox').value;
-    //console.log(typeof(korisnikovBroj));
     if (korisnikovBroj < 1 || korisnikovBroj >100) {
         errorMsg.innerText = "Dozvoljen je broj izmedju 1 i 100"
         return
     }
     errorMsg.innerText = ""
     prethodniPokusaji.push(korisnikovBroj)
-    //console.log(prethodniPokusaji);
     d('prethodniPokusaji').innerHTML = prethodniPokusaji;
     pokusaji ++;
     preostaliPokusaji = maxPokusaja - pokusaji
@@ -70,21 +71,21 @@ function poredjenje (){
 
 if (prethodniPokusaji.length < maxPokusaja) {
     if (korisnikovBroj > kompjuterovBroj ) {
-        textPolje.innerHTML = "Trazeni broj je manji!";
+        textPolje.innerHTML = "Traženi broj je manji!";
         inputBroj.value = "";
 
     } else if (korisnikovBroj < kompjuterovBroj) {
-        textPolje.innerHTML = "Trazeni broj je veci!";
+        textPolje.innerHTML = "Traženi broj je veći!";
         inputBroj.value = "";
     }else {
         textPolje.innerHTML = "Pogodili ste broj!" + "<br>Trebalo vam je "  +
-        pokusaji +" pokusaja";
+        pokusaji +" pokušaja";
         d('container').style.background = 'linear-gradient(to right, #000000, #0f9b0f)';
         krajIgre();
     }
 } else {
     if (korisnikovBroj > kompjuterovBroj ) {
-        textPolje.innerHTML = "Zao mi je, izgubili ste! + <br> Broj je bio " +
+        textPolje.innerHTML = "Žao mi je, izgubili ste! + <br> Broj je bio " +
         kompjuterovBroj;
         d('container').style.background = 'linear-gradient(to right, #000000, #0f9b0f)';
         krajIgre();
@@ -96,7 +97,7 @@ if (prethodniPokusaji.length < maxPokusaja) {
         krajIgre();
     }else {
         textPolje.innerHTML = "Pogodili ste broj!" + "<br>Trebalo vam je "  +
-        pokusaji +" pokusaja";
+        pokusaji +" pokušaja";
         d('container').style.background = 'linear-gradient(to right, #000000, #0f9b0f)';
         krajIgre();
     }
