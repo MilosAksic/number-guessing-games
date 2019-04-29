@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random number generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/meni.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/manjevise.css" />
+
+</head>
+<body>
+        <header>
+            <div class="containernovo">
+                <h1 class="logo">Izaberite igru :</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" >Pogodi broj</a></li>
+                        <li><a href="lotto.html">Lotto</a></li>
+                        <li><a href="#" class="aktivna">Manje/Vise</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+     <div id="container">
+
+          <div class="panel">
+            <h2>Na ekranu je dat jedan broj</h2>
+            <h3>Tvoj cilj je da pogodis da li je sledeci broj veci ili manji od zadatog broja</h3><hr>
+            
+            
+
+            <div id="main">
+                <div class="levo">
+                    <h2>Zadati broj: </h2>
+                    <h3><span id="zadatiBroj"> </span></h3><br>
+                </div>
+
+                <div class="desno">
+                    
+                    <button id="vise"><i class="fas fa-arrow-up"></i>
+                    </button> <br>
+                    <button id="manje"><i class="fas fa-arrow-down"></i>
+
+                    </button>
+                    <h2 id="textMsg">Izaberite manje ili vise   </h2>
+                </div>
+
+                <div class="dole">
+                    <h2>Score: <span id="score">0</span></h2>
+                    <button id="newGame">Nova igra</button>
+                </div>
+            </div>
+          </div>
+     </div>
+
+
+
+
+
+
+
+
+    <script src="bootstrap/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="Js/manjevise.js"></script>
+
+</body>
+</html>

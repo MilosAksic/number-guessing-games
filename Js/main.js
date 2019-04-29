@@ -1,4 +1,4 @@
-let d = id =>document.getElementById(id);
+const d = id =>document.getElementById(id);
 
 //inicijalizacije 
 

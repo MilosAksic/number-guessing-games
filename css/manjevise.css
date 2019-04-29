@@ -1,0 +1,50 @@
+
+#main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 300px;
+    grid-template-areas:
+             "levo desno"
+             "dole dole";
+
+}
+.panel {
+    max-width: 87%;
+}
+
+.levo {
+    /* background-color: green; */
+    grid-area: levo;
+    align-self: center;
+}
+.desno {
+    /* background-color: pink; */
+    grid-area: desno;
+    align-self: center;
+    padding-top: 10px;
+}
+
+.dole {
+    /* background-color: blue; */
+    grid-area: dole;
+    margin-top: 50px;
+}
+#zadatiBroj{
+    font-size: 50px;
+}
+
+#vise, #manje {
+    width: 100px;
+    height: 70px;
+}
+#newGame{
+    width: 200px;
+    margin-top: 25px;
+}
+#textMsg {
+    font-size: 25px;
+}
+.fa-arrow-up, .fa-arrow-down {
+    font-size: 30px;
+}

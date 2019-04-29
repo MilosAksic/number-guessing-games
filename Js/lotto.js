@@ -1,3 +1,10 @@
+
+//u dugmetu reset da stavim zeleni gradient i za ostale boje
+//promenim input , da ne bude red i green
+// stil texta izvuceni brojevi
+// responsive na 640 - 870  (provera) 
+// brojevi u gridu
+
 let d = id => document.getElementById(id);
 
 let niz = [];
@@ -25,8 +32,6 @@ for (let i = 0; i < 35; i++) {
     }
 
 }
-
-console.log(niz);
 
 
 function proveraNiza(a) {
