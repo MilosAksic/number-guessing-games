@@ -11,6 +11,9 @@
  }
 
  header {
+    background: -webkit-gradient(linear, left top, right top, from(#191654), to(#43c6ac));
+    background: -webkit-linear-gradient(left, #191654, #43c6ac);
+    background: -o-linear-gradient(left, #191654, #43c6ac);
     background: linear-gradient(to right, #191654, #43c6ac); 
     color:white;
 
@@ -67,6 +70,8 @@
      position: absolute;
      top: 0;
      width: 0%;
+     -webkit-transition: all ease-in-out 250ms;
+     -o-transition: all ease-in-out 250ms;
      transition: all ease-in-out 250ms;
  }
 

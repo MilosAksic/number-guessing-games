@@ -6,6 +6,8 @@
     margin: 20px;
     border: 3px solid black;
     border-radius: 50%;
+    background: -webkit-radial-gradient(30px 30px, circle, #5cabff, black);
+    background: -o-radial-gradient(30px 30px, circle, #5cabff, black);
     background: radial-gradient(circle at 30px 30px, #5cabff, black);
 
 }
@@ -22,7 +24,7 @@ h2 {
     
 input {
     width: 80px;
-    font-size:20px;
+    font-size:25px;
     margin-right: 10px;
 }
 
@@ -36,15 +38,18 @@ input {
 }
 
 .zeleno {
-    background: green
+    background: -webkit-linear-gradient(left, #56ab2f, #a8e063);
+    background: -o-linear-gradient(left, #56ab2f, #a8e063);
+    background: linear-gradient(to right, #56ab2f, #a8e063); 
 }
-
 .red {
     background: red;
 }
 
 #container  {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto auto auto auto auto;
     grid-template-columns: auto auto auto auto auto;
      background-color: #d1e0e0 !important; 
     padding: 10px;
@@ -61,6 +66,8 @@ button {
     text-align: center;
     border-radius: 15px;
     padding: 15px;
+    background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    background: -o-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
     background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
     padding: 10px;
     margin-top: 15px;
@@ -68,6 +75,9 @@ button {
 }
 
 .brojeviContainer {
+    background: -webkit-gradient(linear, left top, right top, from(#ada996), color-stop(#f2f2f2), color-stop(#dbdbdb), to(#eaeaea))!important;
+    background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)!important;
+    background: -o-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)!important;
     background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)!important; 
     -webkit-box-shadow: 0px 0px 15px 5px black;
     -moz-box-shadow: 0px 0px 15px 5px black;
@@ -90,7 +100,8 @@ input[type="number"] {
 
 @media only screen and (max-width: 640px) {
     #container {
-        max-width: 100%;
+        width: 95% !important;
+        -ms-grid-columns: auto auto auto ;
         grid-template-columns: auto auto auto ;
     }
     #container2 {
@@ -98,5 +109,13 @@ input[type="number"] {
     }
     .panel {
         max-width: 95%;
+    }
+}
+@media only screen and (min-width: 641px) and (max-width: 870px) {
+    #container2 {
+        max-width: 95%;
+    }
+    .brojeviContainer {
+        width: 95% !important;
     }
 }

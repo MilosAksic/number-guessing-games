@@ -41,11 +41,16 @@ body {
     margin: 20px auto;
     border-radius: 15px;
     padding: 15px;
+    background: -webkit-gradient(linear, left top, right top, from(#ada996), color-stop(#f2f2f2), color-stop(#dbdbdb), to(#eaeaea));
+    background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    background: -o-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
     background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
 
 }
 
 button {
+    background: -webkit-linear-gradient(left, #f12711, #f5af19);
+    background: -o-linear-gradient(left, #f12711, #f5af19);
     background: linear-gradient(to right, #f12711, #f5af19);;
     height: 60px;
     width: 70%;
@@ -72,6 +77,8 @@ input {
 }
 
 .activeButton {
+    background: -webkit-linear-gradient(left, #56ab2f, #a8e063);
+    background: -o-linear-gradient(left, #56ab2f, #a8e063);
     background: linear-gradient(to right, #56ab2f, #a8e063); 
 }
 @media only screen and (max-width: 440px) {
@@ -108,10 +115,10 @@ input {
         padding: 0;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -128,7 +135,7 @@ input[type="number"] {
     color: red;
 }
 
-/* verzija 2 */
+
 
 @media only screen and (min-width: 801px) and (max-width: 1120px) {
     #container {

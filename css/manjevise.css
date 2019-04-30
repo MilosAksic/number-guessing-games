@@ -1,32 +1,88 @@
 
 #main {
     margin-top: 10px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 250px 300px;
     grid-template-rows: 250px 300px;
     grid-template-areas:
              "levo desno"
              "dole dole";
 
 }
+
+.mainKarte {
+    margin-top: 10px;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 350px 300px;
+    grid-template-rows: 350px 300px;
+    grid-template-areas:
+             "div1 div2"
+             "div3 div3";
+
+}
+#kartePanel , #brojeviPanel{
+    display: none;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+}
 .panel {
     max-width: 87%;
 }
 
+.div1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: div1;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+.div2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: div2;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+.div3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: div3;
+    
+}
+
 .levo {
-    /* background-color: green; */
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: levo;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
 .desno {
-    /* background-color: pink; */
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: desno;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     padding-top: 10px;
 }
 
 .dole {
-    /* background-color: blue; */
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: dole;
     margin-top: 50px;
 }
@@ -34,11 +90,11 @@
     font-size: 50px;
 }
 
-#vise, #manje {
+#vise, #manje, #kartaManje, #kartaVise{
     width: 100px;
     height: 70px;
 }
-#newGame{
+#newGame,#newGameCard, #resetBroj , #resetKarte {
     width: 200px;
     margin-top: 25px;
 }
@@ -47,4 +103,79 @@
 }
 .fa-arrow-up, .fa-arrow-down {
     font-size: 30px;
+}
+
+
+@media only screen and (max-width: 550px) {
+    #main {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 150px 250px 250px;
+        grid-template-rows: 150px 250px 250px;
+        grid-template-areas:
+                 "levo"
+                 "desno"
+                 "dole";
+    
+    }
+
+    #mainKarte {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 150px 250px 250px;
+        grid-template-rows: 150px 250px 250px;
+        grid-template-areas:
+                 "div1"
+                 "div2"
+                 "div3";
+    
+    }
+    img {
+        width: 100px;
+        height: 150px;
+    }
+    .panel {
+        max-width: 97%;
+    }
+    .panel h3 {
+        font-size: 22px;
+    }
+    #textMsg {
+        font-size: 25px;
+
+    }
+    #mainKarte > .div1 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    
+    }
+
+    #mainKarte > .div2 {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    
+    }
+
+    #mainKarte > .div3 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    
+    }
+    .levo {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    
+    }
+    .desno {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    
+    }
+    .dole {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    
+    }
 }

@@ -1,8 +1,4 @@
 
-//u dugmetu reset da stavim zeleni gradient i za ostale boje
-//promenim input , da ne bude red i green
-// stil texta izvuceni brojevi
-// responsive na 640 - 870  (provera) 
 // brojevi u gridu
 
 let d = id => document.getElementById(id);
@@ -176,8 +172,9 @@ reset.addEventListener('click', function () {
 
     for(let i = 0 ; i<35 ; i++) {
 
+    //ovde 
     
-    d(`broj${i}`).style.background = "#d1e0e0"
+    d(`broj${i}`).style.background = "radial-gradient(circle at 30px 30px, #5cabff, black)";
     }
 
     niz = [];
