@@ -205,18 +205,23 @@ function resetKarte () {
             case 11:
             textMsg1.innerText = "Kraj igre , sledeca karta je bila Zandar (12) " ; 
             disablingCards();
+            break;
             case 12:
             textMsg1.innerText = "Kraj igre , sledeca karta je bila Dama (13) "  ; 
             disablingCards();
+            break;
             case 13:    
             textMsg1.innerText = "Kraj igre , sledeca karta je bila Kralj (14) "  ; 
             disablingCards();
+            break;
             case 14: 
             textMsg1.innerText = "Kraj igre , sledeca karta je bila Kec "  ; 
             disablingCards();
+            break
             default:
-            textMsg1.innerText = "Kraj igre , sledeca karta je bila : " + brojKarte ; 
+            textMsg1.innerText = "Kraj igre , sledeca karta je bila : " + brojKarte  ; 
             disablingCards();
+            break;
 
         }   
     }
