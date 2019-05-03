@@ -37,4 +37,11 @@ Treca igra ima dva izbora :
 
 - Manje/vise sa kartama.
 
+-Obe igre rade po sličnom prinicipu
+
+-Igraču igre je ponudjena opcija da pogadja da li je sledeci random broj manji ili veci od broja ispisanog na ekranu.
+
+-Takodje tu su opcije za novu igru ili resetovanje trenutne igre
+
+
 
