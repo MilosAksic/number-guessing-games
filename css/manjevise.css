@@ -89,6 +89,9 @@ img{
 #zadatiBroj{
     font-size: 50px;
 }
+.dole h2 , .div3 h2 {
+    font-size: 30px;
+}
 
 #vise, #manje, #kartaManje, #kartaVise{
     width: 100px;

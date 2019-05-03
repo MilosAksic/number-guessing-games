@@ -9,9 +9,8 @@
      width: 80%;
      margin: 0 auto;
  }
-
+ 
  header {
-    background: -webkit-gradient(linear, left top, right top, from(#191654), to(#43c6ac));
     background: -webkit-linear-gradient(left, #191654, #43c6ac);
     background: -o-linear-gradient(left, #191654, #43c6ac);
     background: linear-gradient(to right, #191654, #43c6ac); 
@@ -56,6 +55,7 @@
 
  nav a:hover {
      color: #000;
+     text-decoration: none; 
  }
 
  .aktivna {

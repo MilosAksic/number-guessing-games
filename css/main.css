@@ -17,6 +17,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+#tezina {
+    font-size: 25px;
+}
 
 #container {
     max-width: 70%;
@@ -41,7 +44,6 @@ body {
     margin: 20px auto;
     border-radius: 15px;
     padding: 15px;
-    background: -webkit-gradient(linear, left top, right top, from(#ada996), color-stop(#f2f2f2), color-stop(#dbdbdb), to(#eaeaea));
     background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
     background: -o-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
     background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
@@ -65,6 +67,9 @@ button:focus {
 button:hover {
     cursor: pointer;
 }
+#pokusajiDiv {
+    display: none;
+}
 
 input {
     border-radius: 15px;
@@ -74,6 +79,9 @@ input {
     margin-top: 8px;
     margin-bottom: 10px;
     outline: none;
+}
+#prethodniPokusaji {
+    font-size: 25px;
 }
 
 .activeButton {

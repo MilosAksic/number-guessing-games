@@ -10,6 +10,7 @@ const textPolje = d('textOutput');
 const pokusajiPolje = d('pokusaji');
 const errorMsg = d('errorMsg');
 const tezina = d('tezina');
+const pokusajiDiv = d('pokusajiDiv');
 
 let kompjuterovBroj;
 let prethodniPokusaji = [];
@@ -62,7 +63,8 @@ function poredjenje (){
         return
     }
     errorMsg.innerText = ""
-    prethodniPokusaji.push(korisnikovBroj)
+    pokusajiDiv.style.display="block";
+    prethodniPokusaji.push(korisnikovBroj);
     d('prethodniPokusaji').innerHTML = prethodniPokusaji;
     pokusaji ++;
     preostaliPokusaji = maxPokusaja - pokusaji

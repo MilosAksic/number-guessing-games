@@ -3,7 +3,7 @@
 
 let d = id => document.getElementById(id);
 
-//inicijalizacija
+//inicijalizacije
 
 const zadatiBroj = d('zadatiBroj');
 const dugmeVise = d('vise');
@@ -18,6 +18,9 @@ const newGame = d ('newGame');
 const karta = d('slika')
 const igraBrojeva = d('dugmeBrojevi')
 const igraKarata = d('dugmeKarte')
+ 
+//promenljive
+
 
 let prethodniBrojevi = [];
 let prethodneKarte = []
@@ -160,7 +163,7 @@ function resetKarte () {
     if (brojKarte < prethodneKarte[prethodneKarte.length -1]) {
         switch(brojKarte) {
             case 11:
-            textMsg1.innerText = "Kraj igre , sledeca karta je bila Zandar (12) " ;
+            textMsg1.innerText = "Kraj igre , sledeca karta je bila Zandar (12) " ; 
             disablingCards();
             break;
             case 12:
@@ -217,9 +220,9 @@ function resetKarte () {
             case 14: 
             textMsg1.innerText = "Kraj igre , sledeca karta je bila Kec "  ; 
             disablingCards();
-            break
+            break;
             default:
-            textMsg1.innerText = "Kraj igre , sledeca karta je bila : " + brojKarte  ; 
+            textMsg1.innerText = "Kraj igre , sledeca karta je bila : " + brojKarte ; 
             disablingCards();
             break;
 

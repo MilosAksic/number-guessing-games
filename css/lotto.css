@@ -75,7 +75,6 @@ button {
 }
 
 .brojeviContainer {
-    background: -webkit-gradient(linear, left top, right top, from(#ada996), color-stop(#f2f2f2), color-stop(#dbdbdb), to(#eaeaea))!important;
     background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)!important;
     background: -o-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea)!important;
     background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)!important; 

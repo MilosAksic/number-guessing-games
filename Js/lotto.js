@@ -12,8 +12,8 @@ const reset = d('reset');
 // pravi niz
 
 for (let i = 0; i < 35; i++) {
-    var add = true;
-    var randomNumber = Math.floor(Math.random() * 48) + 1;
+    let add = true;
+    let randomNumber = Math.floor(Math.random() * 48) + 1;
 
     for (let y = 0; y < 35; y++) {
         if (niz[y] == randomNumber) {
@@ -30,11 +30,11 @@ for (let i = 0; i < 35; i++) {
 }
 
 
-function proveraNiza(a) {
+function proveraNiza(nekiNiz) {
     var counts = [];
-    for (var i = 0; i <= a.length; i++) {
-        if (counts[a[i]] === undefined) {
-            counts[a[i]] = 1;
+    for (var i = 0; i <= nekiNiz.length; i++) {
+        if (counts[nekiNiz[i]] === undefined) {
+            counts[nekiNiz[i]] = 1;
         } else {
             return true;
         }
