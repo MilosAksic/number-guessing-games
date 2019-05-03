@@ -1,4 +1,4 @@
-# RandomNumberProjekat
+# NumberGuessingGames
 Zavrsni rad za Front-End
 
 Sama aplikacija se sastoji od tri igre :
