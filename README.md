@@ -1,4 +1,4 @@
-# Numbe Guessing Games
+# Number Guessing Games
 Zavrsni rad za Front-End
 
 Sama aplikacija se sastoji od tri igre :
