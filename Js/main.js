@@ -16,7 +16,7 @@ let kompjuterovBroj;
 let prethodniPokusaji = [];
 let pokusaji = 0 ;
 let maxPokusaja = 10;
-let preostaliPokusaji
+let preostaliPokusaji;
 
 //funkcije
 
@@ -31,6 +31,7 @@ function novaIgra() {
 
 function lakaIgra (){
     maxPokusaja = 10;
+    pokusajiPolje.innerHTML = maxPokusaja
     dugmeLako.className = 'activeButton';
     dugmeTesko.className ='';
     dugmeTesko.style.display = 'none';
@@ -40,6 +41,7 @@ function lakaIgra (){
 
 function teskaIgra (){
     maxPokusaja = 5;
+    pokusajiPolje.innerHTML = maxPokusaja
     dugmeLako.className = '';
     dugmeTesko.className ='activeButton';
     dugmeLako.style.display = 'none';
@@ -60,9 +62,9 @@ function poredjenje (){
     var korisnikovBroj = " "+ d('inputBox').value;
     if (korisnikovBroj < 1 || korisnikovBroj >100) {
         errorMsg.innerText = "Dozvoljen je broj izmedju 1 i 100"
-        return
+        return;
     }
-    errorMsg.innerText = ""
+    errorMsg.innerText = "";
     pokusajiDiv.style.display="block";
     prethodniPokusaji.push(korisnikovBroj);
     d('prethodniPokusaji').innerHTML = prethodniPokusaji;

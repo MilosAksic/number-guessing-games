@@ -1,6 +1,4 @@
 
-// swith / case ne radi
-
 let d = id => document.getElementById(id);
 
 //inicijalizacije
@@ -20,8 +18,6 @@ const igraBrojeva = d('dugmeBrojevi')
 const igraKarata = d('dugmeKarte')
  
 //promenljive
-
-
 let prethodniBrojevi = [];
 let prethodneKarte = []
 let rezultat = 0 ;
@@ -90,7 +86,7 @@ function resetKarte () {
 
  window.addEventListener('load', upisBroja);
  window.addEventListener('load', upisiKartu);
- newGame.addEventListener('click', novaIgra)
+ newGame.addEventListener('click', novaIgra);
  d('newGameCard').addEventListener('click', novaIgra)
 
 

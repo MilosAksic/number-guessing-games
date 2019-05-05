@@ -113,8 +113,8 @@ img{
     #main {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        -ms-grid-rows: 150px 250px 250px;
-        grid-template-rows: 150px 250px 250px;
+        -ms-grid-rows: 150px 250px 300px;
+        grid-template-rows: 150px 250px 300px;
         grid-template-areas:
                  "levo"
                  "desno"

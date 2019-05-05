@@ -70,7 +70,7 @@ button {
     background: -o-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
     background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 15px;       
     margin-bottom: 15px;
 }
 
@@ -109,6 +109,12 @@ input[type="number"] {
     .panel {
         max-width: 95%;
     }
+
+    button{
+        max-width: 25%;
+
+    }
+
 }
 @media only screen and (min-width: 641px) and (max-width: 870px) {
     #container2 {

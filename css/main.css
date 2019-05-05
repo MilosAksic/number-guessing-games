@@ -89,11 +89,14 @@ input {
     background: -o-linear-gradient(left, #56ab2f, #a8e063);
     background: linear-gradient(to right, #56ab2f, #a8e063); 
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 535px) {
     #dugmeLako, #dugmeTesko {
         font-size: 16px;
         max-width: 90%;
     }
+    li ,a {
+        width: 100%
+     }
 }
 
 
@@ -157,5 +160,11 @@ input[type="number"] {
     }
     h3 {
         font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 531px) {
+    li ,a {
+        display : block;
     }
 }

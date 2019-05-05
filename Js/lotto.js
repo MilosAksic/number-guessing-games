@@ -105,6 +105,7 @@ function provera() {
 
 dugme.addEventListener('click', function () {
     testNiz = [];
+
     for (let i =1 ; i<7 ; i++){
         testNiz.push( parseInt (d(`mojbroj${i}`).value));
     }
@@ -126,7 +127,7 @@ dugme.addEventListener('click', function () {
         d('errorText').innerHTML = "Upisite sve razlicite brojeve";
         return
     }
-
+    dugme.disabled= true;
     d('container').style.display = 'grid';
     d('pogodci').style.display = 'block';
     d('test').style.display = 'block';
@@ -169,10 +170,11 @@ reset.addEventListener('click', function () {
     d('pogodci').style.display = 'none';
     d('test').style.display = 'none';
     d('izvuceni').style.display = 'none';
+    dugme.disabled= false;
+
 
     for(let i = 0 ; i<35 ; i++) {
 
-    //ovde 
     
     d(`broj${i}`).style.background = "radial-gradient(circle at 30px 30px, #5cabff, black)";
     }
