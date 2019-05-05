@@ -43,7 +43,6 @@ function upisiKartu (){
 function ubacivanjeKarte() {
     karta.src = `images/karta${brojKarte}.png`;
     prethodneKarte.push(brojKarte);
-    console.log(prethodneKarte);
 };
 
 
@@ -51,15 +50,14 @@ function ubacivanjeKarte() {
 function ubacivanjeUNiz () {
     zadatiBroj.innerHTML = kompjuterovBroj;
     prethodniBrojevi.push(kompjuterovBroj);
-    console.log(prethodniBrojevi);
 }
 
 function novaIgra() {
     window.location.reload();
 }
 function disablingCards (){
-        kartaManje.disabled = true;
-        kartaVise.disabled = true;
+    kartaManje.disabled = true;
+    kartaVise.disabled = true;
 }
 function resetBrojeva () {
     rezultat = 0;
@@ -79,7 +77,6 @@ function resetKarte () {
     kartaVise.disabled = false;
     scoreCard.innerHTML = rezultatKarte;
     upisiKartu();
-
 }
 
  // event listneri
