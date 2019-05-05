@@ -3,16 +3,16 @@ Zavrsni rad za Front-End
 
 Sama aplikacija se sastoji od tri igre :
 
-1. Random number guessing game
+1. Pogodi broj
 
 - Sam cilj igre jeste da se pogodi broj koji je kompjuter zamislio.
 
 
 - Na raspolaganju su dve težine:
 
-          1. Laka igra  i
+      1. Laka igra  i
           
-          2. Teška igra
+      2. Teška igra
 
 
 - Aplikacija pamti prethodne pokusaje i ispisuje ih na ekranu.
@@ -20,28 +20,24 @@ Sama aplikacija se sastoji od tri igre :
 
 2. Lotto
 
-- Od mogućih 48 brojeva izvlači se 35 brojeva. 
+- Od mogućih 48 brojeva kompjuter izvlači 35 brojeva . 
 
-- Cilj je da se pogodi 6 broja koja su pala od  35 izvučenih
+- Cilj je da korisnik pogodi 6 brojeva od 35 izvučenih
 
 - Uradjena je validacija samih input polja.
 
-- Kuglice i input polje pozelene ako je  broj pogodjen.
+- Kuglice i input polja pozelene ako je  broj pogodjen
 
 
-3. Manje/vise
+3. Manje/vece
 
 Treca igra ima dva izbora : 
 
-- Manje/vise sa brojevima i 
+- Manje/vece sa brojevima i 
 
-- Manje/vise sa kartama.
+- Manje/vece sa kartama.
 
--Obe igre rade po sličnom prinicipu
 
--Igraču igre je ponudjena opcija da pogadja da li je sledeci random broj manji ili veci od broja ispisanog na ekranu.
-
--Takodje tu su opcije za novu igru ili resetovanje trenutne igre
 
 
 
